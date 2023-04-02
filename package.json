@@ -2,6 +2,8 @@
   "name": "react-electron",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +17,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-start": "electron .",
+    "dev": "concurrently  \"wait-on http://localhost:3000 && cross-env NODE_ENV=production electron .\" \"cross-env BROWSER=none npm run start\"",
+    "package": "cross-dev NODE_ENV=production npm run package:electron"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +39,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^23.2.1",
+    "electron-builder": "^23.6.0",
+    "wait-on": "^7.0.1"
   }
 }

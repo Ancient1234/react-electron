@@ -1,0 +1,151 @@
+.pay-page {
+  background-color: rgb(218, 226, 239);
+  height: 800px;
+}
+.header {
+  background-color: white;
+  height: 80px;
+  align-items: center;
+  display: flex;
+}
+h1 {
+  width: 700px;
+  line-height: 80px;
+  margin: auto;
+  /* margin:auto可以使h1上下居中 */
+  padding-left: 30px;
+  color: rgb(5, 121, 242);
+}
+.barrierFree {
+  margin: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.orderDetail {
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #f6f8fc;
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.orderDetailLeft {
+  width: 280px;
+  height: 140px;
+
+  border-radius: 3px;
+  padding: 10px;
+
+  background-color: #f1f6ff;
+}
+.amount {
+  width: auto;
+  height: 110px;
+}
+.amount-label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.amount-content {
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  color: rgb(250, 105, 9);
+}
+
+.leftTime-content {
+  font-size: 13px;
+  font-weight: bold;
+}
+.route {
+  padding: 12px;
+}
+.route-label {
+  font-size: 18px;
+  font-weight: bold;
+  height: 25px;
+}
+.route-content {
+  font-size: 13px;
+  line-height: 25px;
+  color: #55595c;
+}
+.prepareToPay {
+  width: 800px;
+  height: 230px;
+  margin: auto;
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.paymentSelect {
+  height: 100px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.payMethod {
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  font-weight: bold;
+  box-shadow: 0px 0px 4px 0px rgba(242, 242, 244, 0.9);
+}
+
+/* 选中后加上蓝色边框 */
+.payMethod:has(input[type="radio"]:checked) {
+  border: 1px solid#a7dcff;
+  box-shadow: none;
+}
+
+.submitPayment {
+  background-color: rgb(255, 149, 13);
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.otherPayments {
+  width: 800px;
+  height: 60px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.payment {
+  background-color: transparent;
+  width: 120px;
+  /* height: 30px; */
+  border: none;
+  border-right: 1px solid #f8f8f8;
+  display: flex;
+  margin: 20px;
+  color: #162139;
+  font-weight: bold;
+  cursor: pointer;
+  /* text-size-adjust: ; */
+}
+img {
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
