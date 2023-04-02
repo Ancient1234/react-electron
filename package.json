@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "main.js",
-  "homepage": ".",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,9 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-start": "electron .",
-    "dev": "concurrently  \"wait-on http://localhost:3000 && cross-env NODE_ENV=production electron .\" \"cross-env BROWSER=none npm run start\"",
-    "package": "cross-dev NODE_ENV=production npm run package:electron"
+    "ele": "electron .",
+    "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"npm start\"",
+    "package": "electron-packager ./build react-electron --platform=darwin --arch=x64 --electron-version 17.1.0 --overwrite"
   },
   "eslintConfig": {
     "extends": [
@@ -41,9 +41,12 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
     "electron": "^23.2.1",
     "electron-builder": "^23.6.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-packager": "^17.1.1",
     "wait-on": "^7.0.1"
   }
 }

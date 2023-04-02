@@ -100,11 +100,11 @@ function PaymentPage() {
           </button>
 
           <button className="payment">
-            <img src={wepay}></img> 微信支付
+            <img src={wepay} alt="wepay"></img> 微信支付
           </button>
 
           <button className="payment">
-            <img src={onlinebank}></img> 网上银行
+            <img src={onlinebank} alt="onlinebank"></img> 网上银行
           </button>
         </div>
       </div>
