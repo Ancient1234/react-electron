@@ -6,7 +6,7 @@
 
 执行
 
-### `npm run install`
+### `npm install`
 
 来安装项目依赖；
 
