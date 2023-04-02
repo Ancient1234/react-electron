@@ -1,11 +1,11 @@
 import React from "react";
 import "./pay.css";
-import barrierfree from "./barrierfree.jpg";
-import clock from "./clock.png";
-import card from "./card.jpg";
-import alipay from "./alipay.jpg";
-import wepay from "./wepay.jpg";
-import onlinebank from "./onlinebank.jpg";
+import barrierfree from "./imgs/barrierfree.jpg";
+import clock from "./imgs/clock.png";
+import card from "./imgs/card.jpg";
+import alipay from "./imgs/alipay.jpg";
+import wepay from "./imgs/wepay.jpg";
+import onlinebank from "./imgs/onlinebank.jpg";
 function PaymentPage() {
   return (
     <div className="pay-page">
@@ -24,7 +24,6 @@ function PaymentPage() {
               src={barrierfree}
               alt="barrierfree"
               className="barrierFreePic"
-              // style={{ width: "10px" }}
             />
           </button>
         </div>
