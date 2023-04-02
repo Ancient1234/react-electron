@@ -17,3 +17,11 @@
 ### `npm run dev`
 
 以开发模式运行该应用程序
+
+## 3. 项目运行结果
+
+![res.png](res.png)
+
+## GitHub
+
+https://github.com/Ancient1234/react-electron
